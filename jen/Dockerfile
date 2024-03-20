@@ -1,5 +1,4 @@
-FROM python:3.11 
+FROM python:3.11-slim
 WORKDIR /app
 COPY hello.py/app .
-RUN pip install numpy 
 CMD ["python","hello.py"]
